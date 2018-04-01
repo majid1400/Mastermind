@@ -20,17 +20,17 @@ initial = [colors[i] for i in initial]
 
 win = False
 for turn in range(2):
-    guess = input()
-    guess = guess.split(",")
-
-    white = 0
-    black = 0
-    for i in range(len(initial)):
-        if initial[i] == guess[i]:
-            black += 1
-        elif guess[i] in initial:
-            white += 1
-    print("black {} and white {}".format(black, white))
+    # guess = input()
+    # guess = guess.split(",")
+    #
+    # white = 0
+    # black = 0
+    # for i in range(len(initial)):
+    #     if initial[i] == guess[i]:
+    #         black += 1
+    #     elif guess[i] in initial:
+    #         white += 1
+    # print("black {} and white {}".format(black, white))
     if black == L:
         print("Your won!")
         win = True
